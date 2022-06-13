@@ -25,6 +25,6 @@ class Welcome extends CI_Controller {
 
 	public function login()
 	{
-		$this->load->view('firdaus');
+		$this->load->view('rakesh');
 	}
 }
