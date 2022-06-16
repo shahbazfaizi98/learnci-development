@@ -82,7 +82,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Welcome to CodeIgniter!</h1>
 
 	<div id="body">
-		Welcome Guyz
+		<h1>This Is My FIrst Page</h1>
+		<h2><a href="web/login">This is My Login Page</a></h2>
+		<h2><a href="web/registration">This is My Registration Page</a></h2>
 </div>
 
 </body>
