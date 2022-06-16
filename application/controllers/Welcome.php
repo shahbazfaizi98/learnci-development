@@ -31,11 +31,6 @@ class Welcome extends CI_Controller {
 
 	public function login()
 	{
-<<<<<<< HEAD
-		$this->load->view('rakesh');
-=======
 		echo "This Is Login Page";
-		// $this->load->view('firdaus');
->>>>>>> ded60ea1f1e52c311ab71f43d7fa713af1ac92c2
 	}
 }
