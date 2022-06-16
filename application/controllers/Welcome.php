@@ -23,8 +23,15 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 
+	public function registration()
+	{
+		echo "This Is Regisration Page";
+		// $this->load->view('firdaus');
+	}
+
 	public function login()
 	{
-		$this->load->view('firdaus');
+		echo "This Is Login Page";
+		// $this->load->view('firdaus');
 	}
 }
