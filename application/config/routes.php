@@ -54,3 +54,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['web/login'] = 'welcome/login';
 $route['web/registration'] = 'welcome/registration';
+$route['web/sum'] = 'welcome/sumofTwo';
+$route['web/saveRegister'] = 'welcome/saveRegisterUser';

@@ -25,12 +25,22 @@ class Welcome extends CI_Controller {
 
 	public function registration()
 	{
-		echo "This Is Regisration Page";
-		// $this->load->view('firdaus');
+		$this->load->view('web/register');
 	}
 
 	public function login()
 	{
 		echo "This Is Login Page";
+	}
+
+	public function saveRegisterUser(){
+		$username = $this->input->post('username');
+		$email = $this->input->post('email');
+		$mobile = $this->input->post('mobile');
+		$password = $this->input->post('password');
+		echo $username;
+		echo $email;
+		echo $mobile;
+		echo $password;
 	}
 }
