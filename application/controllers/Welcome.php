@@ -30,7 +30,7 @@ class Welcome extends CI_Controller {
 
 	public function login()
 	{
-		echo "This Is Login Page";
+		$this->load->view('web/login');
 	}
 
 	public function saveRegisterUser(){
@@ -41,6 +41,13 @@ class Welcome extends CI_Controller {
 		echo $username;
 		echo $email;
 		echo $mobile;
+		echo $password;
+	}
+
+	public function LoginForm(){
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		echo $username;
 		echo $password;
 	}
 }

@@ -56,3 +56,4 @@ $route['web/login'] = 'welcome/login';
 $route['web/registration'] = 'welcome/registration';
 $route['web/sum'] = 'welcome/sumofTwo';
 $route['web/saveRegister'] = 'welcome/saveRegisterUser';
+$route['web/LoginForm'] = 'welcome/LoginForm';
