@@ -45,9 +45,24 @@ class Welcome extends CI_Controller {
 	}
 
 	public function LoginForm(){
+
+		$st_username = "shahbaz123";
+		$st_pass = "12345678";
+
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
-		echo $username;
-		echo $password;
+
+		if ($st_username == $username) {
+			if ($st_pass == $password) {
+				echo "Username & Password Both Are Correct..!";
+			}
+			else{
+				echo "User Exist but password incorrect";
+			}
+		}
+		else{
+			echo "Its Invalid";
+		}
+
 	}
 }
