@@ -18,13 +18,17 @@
 						</div>
 					</div>
 					<hr>
-					<form class="" action="web/listofitems" method="post">
+					<form class="" action="createBill" method="post">
+            <?php
+            for ($i=0; $i <$list ; $i++) {
+             ?>
 						<div class="row">
 							<div class="col-12">
-								<label for="">No. Of Items</label>
-								<input type="text" name="items" value="" class="form-control">
+								<label for="">Item No. <?php echo $i+1; ?> </label>
+								<input type="text" name="items[]" value="" class="form-control">
 							</div>
 						</div>
+          <?php } ?>
 						<div class="row">
 							<div class="col-12" style="margin-top:10px;">
 								<input type="submit" name="submit" class="btn btn-success">

@@ -65,4 +65,15 @@ class Welcome extends CI_Controller {
 		}
 
 	}
+
+	public function newbill(){
+		$data = array();
+		$data['list'] = $this->input->post('items');
+		$this->load->view('newbill',$data);
+	}
+
+	public function createBill(){
+		$items = $this->input->post('items');
+		echo $test = implode(",",$items);
+	}
 }
