@@ -75,5 +75,9 @@ class Welcome extends CI_Controller {
 	public function createBill(){
 		$items = $this->input->post('items');
 		echo $test = implode(",",$items);
+		$arrayVar = explode(",",$test);
+		print_r($arrayVar);
+
+
 	}
 }
